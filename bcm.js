@@ -30,7 +30,7 @@ client.on('ready', () => {
 
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للإدارة**').then(m => m.delete(5000));//By Codes , ' ّEpicEdiTeDّ#4968
 
-  if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية لاستعمال هاذا الأمر** //By Codes , ' ّEpicEdiTeDّ#4968`ADMINISTRATOR`' );//By Codes , ' ّEpicEdiTeDّ#4968
+  if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية لاستعمال هاذا الأمر** //By Codes , ' `ADMINISTRATOR`' );
 
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);//By Codes , ' ّEpicEdiTeDّ#4968
 
@@ -111,6 +111,60 @@ client.on('ready', () => {
     });//By Codes , ' ّEpicEdiTeDّ#4968//By Codes , ' ّEpicEdiTeDّ#4968
 
 
-client.login('NDgwMTIxMTg0OTc4MjA2NzIy.DmcxHQ.xP3sDG2YLYUpy2hh_23206y2lks');
+
+
+const adminprefix = "$vip";//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+
+const devs = ['470500980342128650'];//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+
+client.on('message', message => {//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+
+  var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+
+    if (!devs.includes(message.author.id)) return;//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+
+    
+
+if (message.content.startsWith(adminprefix + 'setgame')) {//by ,$ ReBeL ء , 🔕#4777 'CODES SERVER'
+
+  client.user.setGame(argresult);
+
+    message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
+
+} else 
+
+  if (message.content.startsWith(adminprefix + 'setname')) {
+
+client.user.setUsername(argresult).then
+
+    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
+
+return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");
+
+} else
+
+  if (message.content.startsWith(adminprefix + 'setavatar')) {
+
+client.user.setAvatar(argresult);
+
+  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
+
+      } else     
+
+if (message.content.startsWith(adminprefix + 'setT')) {
+
+  client.user.setGame(argresult, "https://www.twitch.tv/idk");
+
+    message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
+
+}
+
+});
+
+ 
+
+
+
+client.login(process.env.BOT_TOKEN); 
 
  

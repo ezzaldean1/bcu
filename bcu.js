@@ -26,7 +26,7 @@ client.on('message', message => {//By Codes , ' ّEpicEdiTeDّ#4968
 
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للإدارة**').then(m => m.delete(5000));//By Codes , ' ّEpicEdiTeDّ#4968
 
-  if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية لاستعمال هاذا الأمر** //By Codes , ' ّEpicEdiTeDّ#4968`ADMINISTRATOR`' );//By Codes , ' ّEpicEdiTeDّ#4968
+  if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية لاستعمال هاذا الأمر** //By Codes , '`ADMINISTRATOR`' );//By Codes , ' 
 
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);//By Codes , ' ّEpicEdiTeDّ#4968
 
@@ -84,7 +84,7 @@ client.on('message', message => {//By Codes , ' ّEpicEdiTeDّ#4968
 
          .setTimestamp()//By Codes , ' ّEpicEdiTeDّ#4968
 
-         .setFooter('S Bot' , 'https://cdn.discordapp.com/avatars/465885551329804288/55614337cfb9813916a60383469736d9.jpg?size=128')
+         .setFooter('United')
 
     m.send({ embed: bc })
 

@@ -78,7 +78,7 @@ client.on('message',async message => {
 
           collected.first().delete();
 
-          member.send(`${thisMessage}\n\n${member} ,\nتم الارسال من : ${message.guild.name}\n تم الارسال بواسطة : ${message.author.tag}`);
+          member.send(`/nتم الارسال من : ${message.guild.name}\n تم الارسال بواسطة : ${message.author.tag}`);
 
         });
 

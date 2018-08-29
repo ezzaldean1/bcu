@@ -26,7 +26,7 @@ client.on('message',async message => {
 
     let thisFalse;
 
-    message.channel.send(':regional_indicator_b::regional_indicator_c:| **ارسل الرسالة الان**').then(msg => {
+    message.channel.send('').then(msg => {
 
     let awaitM = message.channel.awaitMessages(filter, {
 

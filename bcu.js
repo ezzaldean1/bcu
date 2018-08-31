@@ -550,10 +550,9 @@ channel.guild.owner.send(`<@!${channelremover.id}>
 
 
 
-
 client.on('guildMemberAdd', member => {
 
-     const welcomer =  member.guild.channels.find('name', 'crystal');
+     const welcomer =  member.guild.channels.find('name', 'chat');
 
 const w = ['./w1.png'];
 
@@ -603,7 +602,7 @@ const w = ['./w1.png'];
 
                         ctx.textAlign = "center";
 
-                        ctx.fillText(`welcome to crystal`, 300, 130);
+                        ctx.fillText(`welcome to server`, 300, 130);
 
                        
 
@@ -757,7 +756,7 @@ client.on("guildMemberAdd", (member) => {
 
 });
             
-            
+           
 
   
 client.login(process.env.BOT_TOKEN); 
